@@ -946,12 +946,14 @@
 	/* USER CODE END usbphyc_port1 */
 };
 
-&vrefbuf{
-	status = "okay";
-
-	/* USER CODE BEGIN vrefbuf */
-	/* USER CODE END vrefbuf */
-};
+//
+// &vrefbuf{
+// 	status = "okay";
+// 
+// 	/* USER CODE BEGIN vrefbuf */
+// 	/* USER CODE END vrefbuf */
+// };
+// 
 
 /* USER CODE BEGIN addons */
 /* USER CODE END addons */
