@@ -548,12 +548,12 @@
 	/* USER CODE END bsec */
 };
 
-&cortex_a7{
-	status = "okay";
-
-	/* USER CODE BEGIN cortex_a7 */
-	/* USER CODE END cortex_a7 */
-};
+// &cortex_a7{
+// 	status = "okay";
+// 
+// 	/* USER CODE BEGIN cortex_a7 */
+// 	/* USER CODE END cortex_a7 */
+// };
 
 &crc1{
 	status = "okay";
