@@ -39,6 +39,25 @@
 	};
 
 	/* USER CODE BEGIN root */
+	aliases {
+		serial0 = &uart4;
+		ethernet0 = &eth1;
+	};
+
+	chosen {
+		#address-cells = <1>;
+		#size-cells = <1>;
+		ranges;
+		stdout-path = "serial0:115200n8";
+	};
+
+	vdd_usb: vdd_usb {
+		compatible = "regulator-fixed";
+		regulator-name = "vdd_usb";
+		regulator-min-microvolt = <3300000>;
+		regulator-max-microvolt = <3300000>;
+		regulator-always-on;
+	};
 	/* USER CODE END root */
 
 	clocks{
