@@ -63,6 +63,12 @@
 		regulator-max-microvolt = <3300000>;
 		regulator-always-on;
 	};
+
+	sys_mclk: clock-mclk {
+		compatible = "fixed-clock";
+		#clock-cells = <0>;
+		clock-frequency = <12000000>;
+	};
 	/* USER CODE END root */
 
 	clocks{
