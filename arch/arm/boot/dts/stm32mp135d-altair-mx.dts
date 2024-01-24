@@ -921,6 +921,16 @@
 	status = "okay";
 
 	/* USER CODE BEGIN sdmmc2 */
+	arm,primecell-periphid = <0x10153180>;
+	non-removable;
+	no-sd;
+	no-sdio;
+	st,neg-edge;
+	bus-width = <8>;
+	vmmc-supply = <&vddmmc>;
+	vqmmc-supply = <&vdd1v8>;
+	#address-cells = <1>;
+	#size-cells = <0>;
 	/* USER CODE END sdmmc2 */
 };
 
