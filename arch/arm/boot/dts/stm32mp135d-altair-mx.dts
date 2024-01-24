@@ -53,8 +53,8 @@
 		serial1 = &uart5;
 		serial2 = &uart7;
 		serial3 = &uart8;
-		// serial4 = &usart2;
-		// serial5 = &usart3;
+		serial4 = &usart2;
+		serial5 = &usart3;
 		ethernet0 = &eth1;
 	};
 
@@ -1017,7 +1017,7 @@
 	pinctrl-names = "default", "sleep";
 	pinctrl-0 = <&usart2_pins_mx>;
 	pinctrl-1 = <&usart2_sleep_pins_mx>;
-	status = "okay";
+	status = "sleep";
 
 	/* USER CODE BEGIN usart2 */
 	/delete-property/dmas;
@@ -1029,7 +1029,7 @@
 	pinctrl-names = "default", "sleep";
 	pinctrl-0 = <&usart3_pins_mx>;
 	pinctrl-1 = <&usart3_sleep_pins_mx>;
-	status = "okay";
+	status = "sleep";
 
 	/* USER CODE BEGIN usart3 */
 	/delete-property/dmas;
