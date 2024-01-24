@@ -65,6 +65,20 @@
 		stdout-path = "serial0:115200n8";
 	};
 
+	vdd1v8: vdd1v8 {
+		compatible = "regulator-fixed";
+		regulator-name = "vdd1v8";
+		regulator-min-microvolt = <3300000>;
+		regulator-max-microvolt = <3300000>;
+	};
+
+	vddmmc: fixedregulator@0 {
+		compatible = "regulator-fixed";
+		regulator-name = "vddmmc";
+		regulator-min-microvolt = <3300000>;
+		regulator-max-microvolt = <3300000>;
+	};
+
 	vdd_usb: vdd_usb {
 		compatible = "regulator-fixed";
 		regulator-name = "vdd_usb";
