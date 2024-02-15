@@ -937,13 +937,6 @@
 	/* USER CODE END rcc */
 };
 
-&rng{
-	status = "okay";
-
-	/* USER CODE BEGIN rng */
-	/* USER CODE END rng */
-};
-
 &sdmmc1{
 	pinctrl-names = "default", "opendrain", "sleep";
 	pinctrl-0 = <&sdmmc1_pins_mx>;
