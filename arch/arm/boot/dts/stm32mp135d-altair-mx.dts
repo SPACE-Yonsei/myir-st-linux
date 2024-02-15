@@ -852,6 +852,12 @@
 	/* USER CODE BEGIN i2c3 */
 	/delete-property/dmas;
 	/delete-property/dma-names;
+
+	at24@50 {
+		compatible = "atmel,24c32";
+		pagesize = <64>;
+		reg = <0x50>;
+	};
 	/* USER CODE END i2c3 */
 };
 
